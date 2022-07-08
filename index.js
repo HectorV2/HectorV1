@@ -11,12 +11,11 @@ function sleep(ms) {
 const GoStumble = (auth) => new Promise((resolve, reject) => {
 
   fetch('http://kitkabackend.eastus.cloudapp.azure.com:5010/round/finishv2/3', {
-    method: 'GET',
     headers: {
       'authorization': auth
-       use_response_compression: true,
-      "Accept-Encoding": "gzip",
-      "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64))",
+      'use_response_compression': 'true',
+      'Accept-Encoding': 'gzip',
+      'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64))',
     }
   })
     .then(res => res.text())
