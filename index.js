@@ -38,7 +38,7 @@ fetch('http://kitkabackend.eastus.cloudapp.azure.com:5010/round/finishv2/3', {
 2. Trophy
 `)));
 
-     const pilih = rs.question(chalk.blueBright(chalk.bold('Choose 1 or 2 : ')));
+     const pilih = rs.question(chalk.blueBright(chalk.bold('[+] Choose 1 or 2 : ')));
 
      if (pilih == 1) {
 
