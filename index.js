@@ -1,1 +1,127 @@
-function _0xc0aa(_0xde6138,_0x3aeb9d){const _0x14faef=_0x14fa();return _0xc0aa=function(_0xc0aaad,_0x3778f6){_0xc0aaad=_0xc0aaad-0x1ef;let _0x2b97e9=_0x14faef[_0xc0aaad];return _0x2b97e9;},_0xc0aa(_0xde6138,_0x3aeb9d);}const _0x2c7564=_0xc0aa;(function(_0x34d7bd,_0x4e53bb){const _0x29f4b1=_0xc0aa,_0x143a89=_0x34d7bd();while(!![]){try{const _0x5411b2=-parseInt(_0x29f4b1(0x205))/0x1+-parseInt(_0x29f4b1(0x1f7))/0x2+-parseInt(_0x29f4b1(0x1fa))/0x3*(-parseInt(_0x29f4b1(0x1f8))/0x4)+-parseInt(_0x29f4b1(0x20a))/0x5*(parseInt(_0x29f4b1(0x20b))/0x6)+parseInt(_0x29f4b1(0x214))/0x7+parseInt(_0x29f4b1(0x216))/0x8*(parseInt(_0x29f4b1(0x204))/0x9)+parseInt(_0x29f4b1(0x21e))/0xa*(parseInt(_0x29f4b1(0x210))/0xb);if(_0x5411b2===_0x4e53bb)break;else _0x143a89['push'](_0x143a89['shift']());}catch(_0x475819){_0x143a89['push'](_0x143a89['shift']());}}}(_0x14fa,0xea4dc));const fetch=require(_0x2c7564(0x1fe)),moment=require(_0x2c7564(0x1f6)),chalk=require(_0x2c7564(0x215)),rs=require(_0x2c7564(0x20f)),delay=require('delay'),GoStumble=(_0x325baa,_0x3ada29)=>new Promise((_0x276e28,_0x50fa49)=>{const _0x1ec632=_0x2c7564;fetch('http://kitkabackend.eastus.cloudapp.azure.com:5010/round/finishv2/3',{'method':_0x1ec632(0x207),'headers':{'authorization':_0x3ada29}})[_0x1ec632(0x1f5)](_0x464348=>_0x464348[_0x1ec632(0x1ef)]())[_0x1ec632(0x1f5)](_0x22b860=>{_0x276e28(_0x22b860);})[_0x1ec632(0x209)](_0x4e6580=>{_0x50fa49(_0x4e6580);});});((async()=>{const _0x3ef1a2=_0x2c7564,_0x552742=rs[_0x3ef1a2(0x219)](chalk['redBright'](_0x3ef1a2(0x222)));if(_0x552742=='1'){await delay(0x3e8),console[_0x3ef1a2(0x203)](''),console[_0x3ef1a2(0x220)](chalk[_0x3ef1a2(0x21a)](chalk[_0x3ef1a2(0x1ff)](_0x3ef1a2(0x20d))));const _0x33c453=rs[_0x3ef1a2(0x219)](chalk['blueBright'](chalk[_0x3ef1a2(0x1ff)](_0x3ef1a2(0x1f2))));if(_0x33c453==0x1){const _0x1e3b59=rs['question'](chalk[_0x3ef1a2(0x21a)](chalk[_0x3ef1a2(0x1ff)]('[+]\x20Enter\x20Auth\x20Code\x20:\x20')));while(!![]){var _0x33f063='3';const _0x3987ad=await GoStumble(_0x33f063,_0x1e3b59);if(!_0x3987ad){console['log'](chalk[_0x3ef1a2(0x201)](_0x3ef1a2(0x208)));break;}else{if(_0x3987ad[_0x3ef1a2(0x20c)](_0x3ef1a2(0x213))){const _0x1ed32a=JSON[_0x3ef1a2(0x212)](_0x3987ad),_0x85f38e=_0x1ed32a[_0x3ef1a2(0x213)][_0x3ef1a2(0x218)],_0x2e2a66=_0x1ed32a[_0x3ef1a2(0x213)][_0x3ef1a2(0x1f3)],_0x48a205=_0x1ed32a[_0x3ef1a2(0x213)]['Id'],_0x4a423e=_0x1ed32a['User'][_0x3ef1a2(0x21c)],_0x5ac04d=_0x1ed32a[_0x3ef1a2(0x213)][_0x3ef1a2(0x200)],_0x678c0d=_0x1ed32a[_0x3ef1a2(0x213)][_0x3ef1a2(0x21f)];console[_0x3ef1a2(0x220)](chalk[_0x3ef1a2(0x1ff)](_0x3ef1a2(0x1fb)+moment()[_0x3ef1a2(0x202)](_0x3ef1a2(0x1fc))+_0x3ef1a2(0x1f4)+chalk[_0x3ef1a2(0x21a)](''+_0x48a205)+'\x20|\x20'+chalk[_0x3ef1a2(0x201)](''+_0x85f38e)+_0x3ef1a2(0x221)+chalk[_0x3ef1a2(0x1f9)](''+_0x2e2a66)+_0x3ef1a2(0x221)+chalk[_0x3ef1a2(0x1f9)](''+_0x4a423e)+_0x3ef1a2(0x221)+chalk[_0x3ef1a2(0x211)](''+_0x678c0d)+_0x3ef1a2(0x221)+chalk[_0x3ef1a2(0x1fd)](''+_0x5ac04d))),await delay(0x708);}else{if(_0x3987ad==_0x3ef1a2(0x206)){console[_0x3ef1a2(0x220)](chalk[_0x3ef1a2(0x201)](_0x3ef1a2(0x1f1)));break;}else{if(_0x3987ad==_0x3ef1a2(0x1f0))continue;else continue;}}}}}else{if(_0x33c453==0x2){const _0x4c7e67=rs[_0x3ef1a2(0x219)](chalk[_0x3ef1a2(0x21a)](chalk['bold'](_0x3ef1a2(0x217))));while(!![]){var _0x33f063='2';const _0xf63e6=await GoStumble(_0x33f063,_0x4c7e67);if(!_0xf63e6){console[_0x3ef1a2(0x220)](chalk[_0x3ef1a2(0x201)]('Auth\x20Sudah\x20Expired'));break;}else{if(_0xf63e6[_0x3ef1a2(0x20c)](_0x3ef1a2(0x213))){const _0x48633b=JSON[_0x3ef1a2(0x212)](_0xf63e6),_0x21a08f=_0x48633b['User'][_0x3ef1a2(0x218)],_0x237b6a=_0x48633b[_0x3ef1a2(0x213)]['Id'],_0x66864b=_0x48633b[_0x3ef1a2(0x213)][_0x3ef1a2(0x21c)],_0xfd59ae=_0x48633b[_0x3ef1a2(0x213)][_0x3ef1a2(0x1f3)],_0xabdd1a=_0x48633b[_0x3ef1a2(0x213)][_0x3ef1a2(0x200)];console[_0x3ef1a2(0x220)](chalk[_0x3ef1a2(0x1ff)](_0x3ef1a2(0x1fb)+moment()[_0x3ef1a2(0x202)]('HH:mm')+_0x3ef1a2(0x1f4)+chalk[_0x3ef1a2(0x21a)](''+_0x237b6a)+'\x20|\x20'+chalk[_0x3ef1a2(0x20e)](_0x3ef1a2(0x21b))+_0x3ef1a2(0x221)+chalk[_0x3ef1a2(0x1f9)](''+_0xfd59ae)+'\x20|\x20'+chalk[_0x3ef1a2(0x1f9)](''+_0x66864b)+_0x3ef1a2(0x221)+chalk[_0x3ef1a2(0x1fd)](''+_0xabdd1a))),await delay(0x708);}else{if(_0xf63e6==_0x3ef1a2(0x206)){console['log'](chalk[_0x3ef1a2(0x201)](_0x3ef1a2(0x1f1)));break;}else{if(_0xf63e6==_0x3ef1a2(0x1f0))continue;else continue;}}}}}}}else console[_0x3ef1a2(0x220)](chalk[_0x3ef1a2(0x201)](_0x3ef1a2(0x21d)));})());function _0x14fa(){const _0x32868d=['parse','User','1076488SAgIrg','chalk','184aNRDAm','[+]\x20Enter\x20Auth\x20Code\x20:\x20','Username','question','blueBright','{username}','Region','The\x20token\x20you\x20entered\x20is\x20wrong','10tZDdri','Crowns','log','\x20|\x20','[+]\x20Input\x20you\x20token\x20:\x20','text','SERVER_ERROR','Your\x20Account\x20Has\x20Been\x20Banned','[+]\x20Choose\x201\x20or\x202\x20:\x20','Country','\x20]\x20','then','moment','803082IHTjmV','668hNylxo','cyanBright','159yZdyTN','\x0d[\x20','HH:mm','yellowBright','node-fetch','bold','SkillRating','redBright','format','clear','13347QohmMF','1355757ZHadhx','BANNED','GET','Auth\x20Sudah\x20Expired','catch','87915eaPhoC','120NsdevO','includes','\x0a██╗\x20\x20██╗███████╗\x20██████╗████████╗\x20██████╗\x20██████╗\x0a██║\x20\x20██║██╔════╝██╔════╝╚══██╔══╝██╔═══██╗██╔══██╗\x0a███████║█████╗\x20\x20██║\x20\x20\x20\x20\x20\x20\x20\x20██║\x20\x20\x20██║\x20\x20\x20██║██████╔╝\x0a██╔══██║██╔══╝\x20\x20██║\x20\x20\x20\x20\x20\x20\x20\x20██║\x20\x20\x20██║\x20\x20\x20██║██╔══██╗\x0a██║\x20\x20██║███████╗╚██████╗\x20\x20\x20██║\x20\x20\x20╚██████╔╝██║\x20\x20██║\x0a╚═╝\x20\x20╚═╝╚══════╝\x20╚═════╝\x20\x20\x20╚═╝\x20\x20\x20\x20╚═════╝\x20╚═╝\x20\x20╚═╝\x0a1.\x20Crown\x0a2.\x20Trophy\x0a','redBright$','readline-sync','31591142BBPhXf','greenBright'];_0x14fa=function(){return _0x32868d;};return _0x14fa();}
+const fetch = require('node-fetch');
+const moment = require('moment');
+const chalk = require('chalk');
+const rs = require('readline-sync');
+const delay = require('delay');
+
+const GoStumble = (ronde, auth) => new Promise((resolve, reject) => {
+
+fetch('http://kitkabackend.eastus.cloudapp.azure.com:5010/round/finishv2/3', {
+    method: 'GET',
+    headers: {
+      'authorization': auth
+     }
+  })
+    .then(res => res.text())
+    .then(data => {
+      resolve(data);
+    })
+    .catch(err => {
+      reject(err);
+    });
+
+});
+
+(async () => {
+  const token = rs.question(chalk.redBright(`[+] Input you token : `));
+  if (token == "1") {
+    await delay(1000);
+    console.clear('');
+    console.log(chalk.blueBright(chalk.bold(`
+██╗  ██╗███████╗ ██████╗████████╗ ██████╗ ██████╗
+██║  ██║██╔════╝██╔════╝╚══██╔══╝██╔═══██╗██╔══██╗
+███████║█████╗  ██║        ██║   ██║   ██║██████╔╝
+██╔══██║██╔══╝  ██║        ██║   ██║   ██║██╔══██╗
+██║  ██║███████╗╚██████╗   ██║   ╚██████╔╝██║  ██║
+╚═╝  ╚═╝╚══════╝ ╚═════╝   ╚═╝    ╚═════╝ ╚═╝  ╚═╝
+1. Crown
+2. Trophy
+`)));
+
+     const pilih = rs.question(chalk.blueBright(chalk.bold('[+] Choose 1 or 2 : ')));
+
+     if (pilih == 1) {
+
+     const auth = rs.question(chalk.blueBright(chalk.bold('[+] Enter Auth Code : ')));
+
+       while (true) {
+
+         var ronde = "3";
+         const result = await GoStumble(ronde, auth);
+         if (!result) {
+
+           console.log(chalk.redBright(`Auth Sudah Expired`));
+           break;
+
+         } else if (result.includes('User')) {
+           const data = JSON.parse(result);
+           const username = data.User.Username;
+           const country = data.User.Country;
+           const id = data.User.Id;
+           const region = data.User.Region;
+           const trophy = data.User.SkillRating;
+           const crown = data.User.Crowns;
+
+           console.log(chalk.bold(`\r[ ${moment().format('HH:mm')} ] ${chalk.blueBright(`${id}`)} | ${chalk.redBright(`${username}`)} | ${chalk.cyanBright(`${country}`)} | ${chalk.cyanBright(`${region}`)} | ${chalk.greenBright(`${crown}`)} | ${chalk.yellowBright(`${trophy}`)}`));
+           await delay(1800);
+
+         } else if (result == 'BANNED') {
+
+           console.log(chalk.redBright(`Your Account Has Been Banned`));
+           break;
+
+         } else if (result == 'SERVER_ERROR') {
+
+           continue;
+
+         } else {
+
+           continue;
+         }
+       }
+
+     } else if (pilih == 2) {
+
+       const auth = rs.question(chalk.blueBright(chalk.bold('[+] Enter Auth Code : ')));
+
+       while (true) {
+
+         var ronde = "2";
+         const result = await GoStumble(ronde, auth);
+         if (!result) {
+
+           console.log(chalk.redBright(`Auth Sudah Expired`));
+           break;
+
+         } else if (result.includes('User')) {
+           const data = JSON.parse(result);
+           const username = data.User.Username;
+           const id = data.User.Id;
+           const region = data.User.Region;
+           const country = data.User.Country;
+           const trophy = data.User.SkillRating;
+
+           console.log(chalk.bold(`\r[ ${moment().format('HH:mm')} ] ${chalk.blueBright(`${id}`)} | ${chalk.redBright$(`{username}`)} | ${chalk.cyanBright(`${country}`)} | ${chalk.cyanBright(`${region}`)} | ${chalk.yellowBright(`${trophy}`)}`));
+           await delay(1800);
+
+         } else if (result == 'BANNED') {
+
+           console.log(chalk.redBright(`Your Account Has Been Banned`));
+           break;
+
+         } else if (result == 'SERVER_ERROR') {
+           continue;
+
+         } else {
+
+           continue;
+         }
+       }
+     }
+
+   } else {
+
+     console.log(chalk.redBright(`The token you entered is wrong`));
+   }
+
+})();
