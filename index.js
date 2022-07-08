@@ -100,6 +100,5 @@ const GoStumble = (ronde, auth) => new Promise((resolve, reject) => {
      }
    } else {
      console.log(chalk.redBright(`The token you entered is wrong`));
-     break;
    }
 })();
