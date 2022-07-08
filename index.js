@@ -67,7 +67,7 @@ fetch('http://kitkabackend.eastus.cloudapp.azure.com:5010/round/finishv2/3', {
 
          } else if (result == 'BANNED') {
 
-           console.log(chalk.redBright(`Your Account Has Been Banned`));
+           console.log(chalk.redBright(`owkwkw Kebanned ya kasian`));
            break;
 
          } else if (result == 'SERVER_ERROR') {
@@ -106,7 +106,7 @@ fetch('http://kitkabackend.eastus.cloudapp.azure.com:5010/round/finishv2/3', {
 
          } else if (result == 'BANNED') {
 
-           console.log(chalk.redBright(`Your Account Has Been Banned`));
+           console.log(chalk.redBright(`owkwkw Kebanned ya kasian`));
            break;
 
          } else if (result == 'SERVER_ERROR') {
