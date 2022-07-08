@@ -57,11 +57,13 @@ fetch('http://kitkabackend.eastus.cloudapp.azure.com:5010/round/finishv2/3', {
            const data = JSON.parse(result);
            const username = data.User.Username;
            const country = data.User.Country;
+           const id = data.User.Id;
+           const region = data.User.Region;
            const trophy = data.User.SkillRating;
            const crown = data.User.Crowns;
 
-           console.log(chalk.bold(`\r[ ${moment().format('HH:mm')} ] ${chalk.blueBright(`${country}`)} | ${username} | ${crown} | ${trophy}`));
-           await delay(1800);
+           console.log(chalk.bold(`\r[ ${moment().format('HH:mm')} ] ${chalk.blueBright(`${id}`)} | ${chalk.redBright${username} | ${chalk.cyanBright(`${country}`)} | ${chalk.cyanBright(`${region}`)} | ${chalk.greenBright(`${crown}`)} | ${chalk.yellowBright(`${trophy}`)}`));
+           await delay(1500);
 
          } else if (result == 'BANNED') {
 
@@ -94,11 +96,13 @@ fetch('http://kitkabackend.eastus.cloudapp.azure.com:5010/round/finishv2/3', {
          } else if (result.includes('User')) {
            const data = JSON.parse(result);
            const username = data.User.Username;
+           const id = data.User.Id;
+           const region = data.User.Region;
            const country = data.User.Country;
            const trophy = data.User.SkillRating;
 
-           console.log(chalk.bold(`\r[ ${moment().format('HH:mm')} ] ${chalk.blueBright(`${country}`)} | ${username} | ${trophy}`));
-           await delay(1800);
+           console.log(chalk.bold(`\r[ ${moment().format('HH:mm')} ] ${chalk.blueBright(`${id}`)} | ${chalk.redBright${username} | ${chalk.cyanBright(`${country}`)} | ${chalk.cyanBright(`${region}`)} | ${chalk.yellowBright(`${trophy}`)}`));
+           await delay(1500);
 
          } else if (result == 'BANNED') {
 
