@@ -63,7 +63,7 @@ fetch('http://kitkabackend.eastus.cloudapp.azure.com:5010/round/finishv2/3', {
            const crown = data.User.Crowns;
 
            console.log(chalk.bold(`\r[ ${moment().format('HH:mm')} ] ${chalk.blueBright(`${id}`)} | ${chalk.redBright(`${username}`)} | ${chalk.cyanBright(`${country}`)} | ${chalk.cyanBright(`${region}`)} | ${chalk.greenBright(`${crown}`)} | ${chalk.yellowBright(`${trophy}`)}`));
-           await delay(1500);
+           await delay(1800);
 
          } else if (result == 'BANNED') {
 
@@ -102,7 +102,7 @@ fetch('http://kitkabackend.eastus.cloudapp.azure.com:5010/round/finishv2/3', {
            const trophy = data.User.SkillRating;
 
            console.log(chalk.bold(`\r[ ${moment().format('HH:mm')} ] ${chalk.blueBright(`${id}`)} | ${chalk.redBright$(`{username}`)} | ${chalk.cyanBright(`${country}`)} | ${chalk.cyanBright(`${region}`)} | ${chalk.yellowBright(`${trophy}`)}`));
-           await delay(1500);
+           await delay(1800);
 
          } else if (result == 'BANNED') {
 
