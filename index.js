@@ -10,12 +10,9 @@ function sleep(ms) {
 
 const GoStumble = (auth) => new Promise((resolve, reject) => {
 
-  fetch('http://kitkabackend.eastus.cloudapp.azure.com:5010/round/finishv2/3', {
+  fetch('http://kitkabackend.eastus.cloudapp.azure.com:5010/round/finishv2/${ronde}', {
     headers: {
       'authorization': auth
-      'use_response_compression': 'true',
-      'Accept-Encoding': 'gzip',
-      'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64))',
     }
   })
     .then(res => res.text())
@@ -29,52 +26,112 @@ const GoStumble = (auth) => new Promise((resolve, reject) => {
 });
 
 (async () => {
-const token = rs.question(chalk.greenBright(`[+] Input you token : `));
+  const token = rs.question(chalk.greenBright(`[+] Input you token : `));
   if (token == "1") {
     await delay(500);
     console.clear('');
-  console.log(chalk.cyanBright(`
+    console.log(chalk.cyanBright(`
 ██╗  ██╗███████╗ ██████╗████████╗ ██████╗ ██████╗
 ██║  ██║██╔════╝██╔════╝╚══██╔══╝██╔═══██╗██╔══██╗
 ███████║█████╗  ██║        ██║   ██║   ██║██████╔╝
 ██╔══██║██╔══╝  ██║        ██║   ██║   ██║██╔══██╗
 ██║  ██║███████╗╚██████╗   ██║   ╚██████╔╝██║  ██║
 ╚═╝  ╚═╝╚══════╝ ╚═════╝   ╚═╝    ╚═════╝ ╚═╝  ╚═╝
-`));
+1. Crown
+2. Trophy
+      `));
 
-  const auth = rs.question(chalk.cyanBright(chalk.bold('[+] Enter Auth Keys : '));
-  const time = rs.question(chalk.cyanBright(chalk.bold('[+] Enter Delay Max 1000 : '));
-  console.log('Sabar Tod');
+     const pilih = rs.question(chalk.cyanBright(chalk.bold('1 or 2 -'));
+     const auth = rs.question(chalk.cyanBright(chalk.bold('[+] Enter Auth Keys : '));
+     const time = rs.question(chalk.cyanBright(chalk.bold('[+] Enter Delay Max 1000 : '));
+     console.log('');
 
-  while (true) {
+     if (pilih == 1) {
+       while (true) {
+         var ronde = "3";
+         const result = await GoStumble(ronde, auth);
+         if (!result) {
+           console.log(chalk.redBright(`Auth Sudah Expired`));
+         } else if (result.includes('User')) {
+           const data = JSON.parse(result);
+           const username = data.User.Username;
+           const country = data.User.Country;
+           const trophy = data.User.SkillRating;
+           const crown = data.User.Crowns;
 
-    const result = await GoStumble(auth);
-    if (!result) {
+           console.log(chalk.cyanBright(chalk.bold(
+             `\r[ ${moment().format('HH:mm')} ] ${chalk.cyanBright(
+               `${country}`
+             )} | ${username} | ${crown} | ${trophy}`
+           );
+           await delay(time)
+         } else if (result == 'BANNED') {
+           console.log(chalk.redBright(`Your Account Has Been Banned`));
+           break;
+         } else if (result == 'SERVER_ERROR') {
+           continue;
+         } else {
+           continue;
+         }
+       }
+     } else if (pilih == 2) {
+       while (true) {
+         var ronde = "2";
+         const result = await GoStumble(ronde, auth);
+         if (!result) {
+           console.log(chalk.redBright(`Auth Sudah Expired`));
+         } else if (result.includes('User')) {
+           const data = JSON.parse(result);
+           const username = data.User.Username;
+           const country = data.User.Country;
+           const trophy = data.User.SkillRating;
 
-        console.log(chalk.redBright(`Auth Sudah Expired`));
+           console.log(chalk.cyanBright(chalk.bold(
+             `\r[ ${moment().format('HH:mm')} ] ${chalk.cyanBright(
+               `${country}`
+             )} | ${username} | ${trophy}`
+           );
+           await delay(time)
+         } else if (result == 'BANNED') {
+           console.log(chalk.redBright(`Your Account Has Been Banned`));
+           break;
+         } else if (result == 'SERVER_ERROR') {
+           continue;
+         } else {
+           continue;
+         }
+       }
+     if (pilih == 1) {
+       while (true) {
+         var ronde = "3";
+         const result = await GoStumble(ronde, auth);
+         if (!result) {
+           console.log(chalk.redBright(`Auth Sudah Expired`));
+         } else if (result.includes('User')) {
+           const data = JSON.parse(result);
+           const username = data.User.Username;
+           const country = data.User.Country;
+           const trophy = data.User.SkillRating;
+           const crown = data.User.Crowns;
 
-    } else if (result.includes('User')) {
-
-      const data = JSON.parse(result);
-      const username = data.User.Username;
-      const country = data.User.Country;
-      const trophy = data.User.SkillRating;
-      const crown = data.User.Crowns;
-
-   console.log(chalk.cyanBright(chalk.bold(`\r
-♨ [${moment().format('HH:mm:ss')}] ♨
-~  ${(`Country : ${country}`)}
-~  ${(`Username : ${username}`)}  
-~  ${(`Crown : ${crown}`)}  
-~  ${(`Trophy : ${trophy}`)}
-~  ${(`Status : ✓ Success`)}`)));
-      await delay(time)
-
-    } else if (result == 'BANNED') {
-      console.log(chalk.bgRed(`Your Account has been Banned`));
+           console.log(chalk.cyanBright(chalk.bold(
+             `\r[ ${moment().format('HH:mm')} ] ${chalk.cyanBright(
+               `${country}`
+             )} | ${username} | ${crown} | ${trophy}`
+           );
+           await delay(time)
+         } else if (result == 'BANNED') {
+           console.log(chalk.redBright(`Your Account Has Been Banned`));
+           break;
+         } else if (result == 'SERVER_ERROR') {
+           continue;
+         } else {
+           continue;
+         }
+       }
+     }
+   } else {
+     console.log(chalk.redBright(`The token you entered is wrong`));
      break;
-    }
-  }
-
-
-}})();
+   }
+})();
