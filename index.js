@@ -6,9 +6,10 @@ const delay = require('delay');
 
 const GoStumble = (ronde, auth) => 
   new Promise((resolve, reject) => {
-    fetch.get(
+    fetch(
       'http://kitkabackend.eastus.cloudapp.azure.com:5010/round/finishv2/${ronde}', 
       {
+        method: 'GET',
         headers: {
          'authorization': auth
         },
