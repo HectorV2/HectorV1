@@ -22,9 +22,10 @@ const GoStumble = (ronde, auth) => new Promise((resolve, reject) => {
 });
 
 (async () => {
-  const token = rs.question(chalk.greenBright(`[+] Input you token : `));
+  const token = rs.question(chalk.redBright(`[+] Input you token : `));
   if (token == "1") {
-    await delay(500);
+    console.log(chalk.greenBright('Your token is correct'));
+    await delay(1000);
     console.clear('');
     console.log(chalk.cyanBright(`
 ██╗  ██╗███████╗ ██████╗████████╗ ██████╗ ██████╗
@@ -37,10 +38,9 @@ const GoStumble = (ronde, auth) => new Promise((resolve, reject) => {
 2. Trophy
       `));
 
-     const pilih = rs.question(chalk.cyanBright(chalk.bold('1 or 2 -'));
-     const auth = rs.question(chalk.cyanBright(chalk.bold('[+] Enter Auth Keys : '));
+     const pilih = rs.question(chalk.cyanBright(chalk.bold('1 or 2 :'));
+     const auth = rs.question(chalk.cyanBright(chalk.bold('[+] Enter Auth Code : '));
      const time = rs.question(chalk.cyanBright(chalk.bold('[+] Enter Delay Max 1000 : '));
-     console.log('');
 
      if (pilih == 1) {
        while (true) {
