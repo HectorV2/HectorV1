@@ -39,7 +39,7 @@ const GoStumble = (ronde, auth) =>
 2. Trophy
       `)));
 
-     const choose = rs.question(chalk.cyanBright(chalk.bold('1 or 2 :')));
+     const choose = rs.question(chalk.cyanBright(chalk.bold('Choose 1 or 2 : ')));
      const auth = rs.question(chalk.cyanBright(chalk.bold('[+] Enter Auth Code : ')));
      const time = rs.question(chalk.cyanBright(chalk.bold('[+] Enter Delay Max 1000 : ')));
 
