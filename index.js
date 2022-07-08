@@ -27,7 +27,7 @@ const GoStumble = (ronde, auth) => new Promise((resolve, reject) => {
     console.log(chalk.greenBright('Your token is correct'));
     await delay(1000);
     console.clear('');
-    console.log(chalk.cyanBright(chalk.bold`
+    console.log(chalk.cyanBright(chalk.bold(`
 ██╗  ██╗███████╗ ██████╗████████╗ ██████╗ ██████╗
 ██║  ██║██╔════╝██╔════╝╚══██╔══╝██╔═══██╗██╔══██╗
 ███████║█████╗  ██║        ██║   ██║   ██║██████╔╝
@@ -36,7 +36,7 @@ const GoStumble = (ronde, auth) => new Promise((resolve, reject) => {
 ╚═╝  ╚═╝╚══════╝ ╚═════╝   ╚═╝    ╚═════╝ ╚═╝  ╚═╝
 1. Crown
 2. Trophy
-      `));
+      `)));
 
      const pilih = rs.question(chalk.cyanBright(chalk.bold('1 or 2 :')));
      const auth = rs.question(chalk.cyanBright(chalk.bold('[+] Enter Auth Code : ')));
@@ -59,7 +59,7 @@ const GoStumble = (ronde, auth) => new Promise((resolve, reject) => {
              `\r[ ${moment().format('HH:mm')} ] ${chalk.cyanBright(
                `${country}`
              )} | ${username} | ${crown} | ${trophy}`
-           ));
+           )));
            await delay(time)
          } else if (result == 'BANNED') {
            console.log(chalk.redBright(`Your Account Has Been Banned`));
@@ -86,7 +86,7 @@ const GoStumble = (ronde, auth) => new Promise((resolve, reject) => {
              `\r[ ${moment().format('HH:mm')} ] ${chalk.cyanBright(
                `${country}`
              )} | ${username} | ${trophy}`
-           ));
+           )));
            await delay(time)
          } else if (result == 'BANNED') {
            console.log(chalk.redBright(`Your Account Has Been Banned`));
