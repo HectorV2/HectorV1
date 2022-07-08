@@ -5,20 +5,23 @@ const rs = require('readline-sync');
 const delay = require('delay');
 
 const GoStumble = (ronde, auth) => new Promise((resolve, reject) => {
-    fetch('http://kitkabackend.eastus.cloudapp.azure.com:5010/round/finishv2/${ronde}',  {
-        headers: {
-         'authorization': auth
-        },
-      }
-    )
-      .then(res => res.text())
-      .then(data => {
-        console.log(data);
-      })
-      .catch(err => {
-       console.log(err);
-      });
-  });
+
+fetch('http://kitkabackend.eastus.cloudapp.azure.com:5010/round/finishv2/3', {
+    method: 'GET',
+    headers: {
+      'authorization': auth
+    }
+  })
+    .then(res => res.text())
+    .then(data => {
+      resolve(data);
+    })
+    .catch(err => {
+      reject(err);
+    });
+
+});
+
 (async () => {
   const token = rs.question(chalk.redBright(`[+] Input you token : `));
   if (token == "1") {
@@ -33,13 +36,13 @@ const GoStumble = (ronde, auth) => new Promise((resolve, reject) => {
 ╚═╝  ╚═╝╚══════╝ ╚═════╝   ╚═╝    ╚═════╝ ╚═╝  ╚═╝
 1. Crown
 2. Trophy
-      `)));
+`)));
 
-     const choose = rs.question(chalk.cyanBright(chalk.bold('Choose 1 or 2 : ')));
+     const pilih = rs.question(chalk.cyanBright(chalk.bold('Choose 1 or 2 : ')));
      const auth = rs.question(chalk.cyanBright(chalk.bold('[+] Enter Auth Code : ')));
      const time = rs.question(chalk.cyanBright(chalk.bold('[+] Enter Delay Max 1000 : ')));
 
-     if (choose == 1) {
+     if (pilih == 1) {
        while (true) {
          var ronde = "3";
          const result = await GoStumble(ronde, auth);
@@ -67,7 +70,7 @@ const GoStumble = (ronde, auth) => new Promise((resolve, reject) => {
            continue;
          }
        }
-     } else if (choose == 2) {
+     } else if (pilih == 2) {
        while (true) {
          var ronde = "2";
          const result = await GoStumble(ronde, auth);
