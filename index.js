@@ -40,7 +40,6 @@ fetch('http://kitkabackend.eastus.cloudapp.azure.com:5010/round/finishv2/3', {
 
      const pilih = rs.question(chalk.cyanBright(chalk.bold('Choose 1 or 2 : ')));
      const auth = rs.question(chalk.cyanBright(chalk.bold('[+] Enter Auth Code : ')));
-     const time = rs.question(chalk.cyanBright(chalk.bold('[+] Enter Delay Max 1000 : ')));
 
      if (pilih == 1) {
        while (true) {
@@ -60,7 +59,7 @@ fetch('http://kitkabackend.eastus.cloudapp.azure.com:5010/round/finishv2/3', {
                `${country}`
              )} | ${username} | ${crown} | ${trophy}`
            ));
-           await delay(time)
+           await delay(1800);
          } else if (result == 'BANNED') {
            console.log(chalk.redBright(`Your Account Has Been Banned`));
            break;
@@ -87,7 +86,7 @@ fetch('http://kitkabackend.eastus.cloudapp.azure.com:5010/round/finishv2/3', {
                `${country}`
              )} | ${username} | ${trophy}`
            ));
-           await delay(time)
+           await delay(1800)
          } else if (result == 'BANNED') {
            console.log(chalk.redBright(`Your Account Has Been Banned`));
            break;
