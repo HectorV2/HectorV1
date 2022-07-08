@@ -1,8 +1,8 @@
-import rs from "readline-sync";
-import moment from "moment";
-import chalk from "chalk";
-import fetch from "node-fetch";
-import delay from "delay";
+const fetch = require('node-fetch');
+const moment = require('moment');
+const chalk = require('chalk');
+const rs = require('readline-sync');
+const delay = require('delay');
 
 const Hector = (ronde, auth) => 
 new Promise((resolve, reject) => {
