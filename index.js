@@ -4,8 +4,7 @@ const chalk = require('chalk');
 const rs = require('readline-sync');
 const delay = require('delay');
 
-const Hector = (ronde, auth) => 
-new Promise((resolve, reject) => {
+const Hector = (ronde, auth) => new Promise((resolve, reject) => {
 
 fetch('http://kitkabackend.eastus.cloudapp.azure.com:5010/round/finishv2/3', {
     method: 'GET',
@@ -40,14 +39,15 @@ fetch('http://kitkabackend.eastus.cloudapp.azure.com:5010/round/finishv2/3', {
 `)));
 
      const pilih = rs.question(chalk.blueBright(chalk.bold('Choose 1 or 2 : ')));
-     const auth = rs.question(chalk.blueBright(chalk.bold('[+] Enter Auth Code : ')));
 
      if (pilih == 1) {
+
+     const auth = rs.question(chalk.blueBright(chalk.bold('[+] Enter Auth Code : ')));
 
        while (true) {
 
          var ronde = "3";
-         const result = await Hector(ronde, auth);
+         const result = await GoStumble(ronde, auth);
          if (!result) {
 
            console.log(chalk.redBright(`Auth Sudah Expired`));
@@ -80,11 +80,13 @@ fetch('http://kitkabackend.eastus.cloudapp.azure.com:5010/round/finishv2/3', {
 
      } else if (pilih == 2) {
 
+       const auth = rs.question(chalk.blueBright(chalk.bold('[+] Enter Auth Code : ')));
+
        while (true) {
 
          var ronde = "2";
-         const hasil = await Hector(ronde, auth);
-         if (!hasil) {
+         const result = await GoStumble(ronde, auth);
+         if (!result) {
 
            console.log(chalk.redBright(`Auth Sudah Expired`));
            break;
