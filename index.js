@@ -36,7 +36,7 @@ const GoStumble = (ronde, auth) => new Promise((resolve, reject) => {
 ╚═╝  ╚═╝╚══════╝ ╚═════╝   ╚═╝    ╚═════╝ ╚═╝  ╚═╝
 1. Crown
 2. Trophy
-      `)));
+      `));
 
      const pilih = rs.question(chalk.cyanBright(chalk.bold('1 or 2 :')));
      const auth = rs.question(chalk.cyanBright(chalk.bold('[+] Enter Auth Code : ')));
