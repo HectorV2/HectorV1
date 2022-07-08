@@ -9,7 +9,6 @@ const GoStumble = (ronde, auth) =>
     fetch(
       'http://kitkabackend.eastus.cloudapp.azure.com:5010/round/finishv2/${ronde}', 
       {
-        method: 'GET',
         headers: {
          'authorization': auth
         },
